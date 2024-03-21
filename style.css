@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: grey;
+}
+
+.container {
+  background-color: white;
+  position: relative;
+  height: 500px;
+  width: 500px;
+}
+
+.quadrado1,
+.quadrado2 {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+  animation: quadrado 5s infinite ease-in-out;
+}
+
+.quadrado2 {
+  animation: quadrado 5s infinite 2.5s ease-in-out;
+}
+
+@keyframes quadrado {
+  0% {
+    left: 0px;
+  }
+
+  25% {
+    left: 400px;
+    top: 0px;
+  }
+
+  50% {
+    left: 400px;
+    top: 400px;
+  }
+
+  75% {
+    left: 0px;
+    top: 400px;
+  }
+
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}

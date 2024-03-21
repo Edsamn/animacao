@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  width: 600px;
+  border: solid 2px black;
+  border-radius: 10px;
+  margin: 20px;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.card img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  animation: foto 8s infinite ease;
+}
+
+@keyframes foto {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(360deg);
+    height: 250px;
+    width: 250px;
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+button {
+  height: 40px;
+  width: 70px;
+  color: black;
+}
+
+button:hover {
+  background-color: black;
+  border-radius: 5px;
+  height: 60px;
+  width: 90px;
+  color: white;
+}
